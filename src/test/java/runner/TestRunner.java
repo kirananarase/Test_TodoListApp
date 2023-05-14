@@ -4,6 +4,7 @@ import base.DriverHandler;
 import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 import org.testng.annotations.*;
 import resources.ConfigFileReader;
@@ -19,7 +20,7 @@ import java.io.File;
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:report/report.html"}
 )
 
-public class TestRunner{
+public class TestRunner extends AbstractTestNGCucumberTests {
 
     @BeforeClass
     public static void initExtentReport() {
