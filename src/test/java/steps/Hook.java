@@ -38,7 +38,7 @@ public class Hook{
                 File sourcePath = ((TakesScreenshot) DriverHandler
                         .GetInstanceDriverHandler().getDriver()).getScreenshotAs(OutputType.FILE);
 
-                File destinationPath = new File(System.getProperty("user.dir") + "/report/screenshots/" + screenshotName + ".png");
+                File destinationPath = new File(System.getProperty("user.dir") + "/reportFolder/screenshots/" + screenshotName + ".png");
                 Files.copy(sourcePath, destinationPath);
                 Reporter.addScreenCaptureFromPath(destinationPath.toString());
 
