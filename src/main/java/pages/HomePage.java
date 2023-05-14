@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 public class HomePage {
 
-    private WebDriver driver;
+    public WebDriver driver;
     ButtonHelper buttonHelper;
     TextBoxHelper textBoxHelper;
     Utils utils;

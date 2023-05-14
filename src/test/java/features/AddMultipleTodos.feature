@@ -15,7 +15,7 @@ Feature: Todo Items Management As a User I want to manage my todo items effectiv
 
     Examples:
       | todoDetails | addTodoItemCount | Next | Previous |
-      | Todo Item | 6                  | next | prev     |
+      | Todo Item |  16                 | next | prev     |
 
   Scenario Outline: Filter Active todos with more than 5 items
     When I click on the "Active" filter
